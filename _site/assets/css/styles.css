@@ -36,3 +36,5 @@ html { overflow: scroll; overflow-x: hidden; }
 
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb { background: #FF0000; }
+
+.navbar-brand { font-size: 0.85em; }
