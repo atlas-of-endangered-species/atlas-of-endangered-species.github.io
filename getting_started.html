@@ -2,4 +2,32 @@
 layout: page
 ---
 
-<h1>Getting started</h1>
+## Introduction
+
+We are now living in the anthropocene.  The biodiversity of our planet faces unprecedented threats. Fortunately new developments in technology and data collection enable conservation scientists to attempt new approaches in addressing the situation. Historically there have been many attempts in creating atlases which contain information about the species locations. So far though those have been focused on mapping observation data only. The abundance of satellite data climate data can be combined with advances in machine learning to create “smarter” maps. Those maps take into account environmental data and create visualisations which are much more advanced and cover much larger areas even where observation data is missing. The current project aims to create such maps for endangered species.
+
+## What is Species Distribution Modelling (SDM)?
+
+SDM or Ecological Niche Modelling (how it is sometimes named), is a relatively new filled in computational biology. It allowed to take into account environmental data and species occurrence data to create maps of the potential habitat. Those models and maps can be used not only to map the niches of the species in question, but also estimate the effects of changed environmental conditions and predict invasive species distributions.
+
+For almost all of the procedures the R package *sdmench* was used. For more information refer to the [Github repository](https://github.com/boyanangelov/sdmbench) or the [Journal of Open Source Software paper](https://joss.theoj.org/papers/b0166a4b4c9cfa39761ec2a2fa71ff1c).
+
+![](https://github.com/boyanangelov/sdmbench/raw/master/logo.png)
+
+## Species selection
+
+For this project the initial focus are European species. The species list is from the [IUCN European Red List of Threatened Species](https://www.iucn.org/regions/europe/our-work/european-red-list-threatened-species).
+
+## Observation data
+
+The observation data is obtained from the [Global Biodiversity Information Facility](https://www.gbif.org/) (GBIF).
+
+![](https://pt-zapovednik.org/wp-content/uploads/2018/05/GBIF-2015-full-stacked-display.png)
+
+## Environmental data
+
+The environmental data consists of the so called “bioclimatic” variables. Those are derived by experts from more general measurements. A detailed description is available on the [Worldclim website](https://www.worldclim.org/bioclim/).
+
+## Machine learning
+
+For the first version of the atlas the Random Forest algorithm was used. This selection is based on the well known out-of-the box good performance on a variety of regression and classification tasks.
