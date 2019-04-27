@@ -8,23 +8,22 @@
 
   <div class="container-full" style="padding-top: 26px;">
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-lg-2">
         {% include sidebar.html %}
       </div>
-      <div class="col-md-10">
+      <div class="col-lg-10">
         {{ content }}
-
 
       </div>
     </div>
 
 
   </div>
-  <footer>
-      <div class="container-full">
+  <!-- <footer>
+      <div class="container">
         <span class="text-muted">{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %} 2019</span>
       </div>
-    </footer>
+    </footer> -->
 </body>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -34,6 +33,7 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $("#mySelect, #mySelectClimate").change(function() {
+          $(".resp-iframe").css("display", "block");
           var value = $("#mySelect").val();
           var climate_val = $("#mySelectClimate").val();
           if (climate_val == "current") {

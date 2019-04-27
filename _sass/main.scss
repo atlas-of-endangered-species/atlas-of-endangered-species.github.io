@@ -48,6 +48,7 @@
 }
 
 .resp-iframe {
+  display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -55,6 +56,8 @@
     height: 100%;
     border: 0;
     min-height: 800px;
+    border: 1px solid grey;
+    margin-bottom: 2em;
 }
 
 #built_with {
@@ -71,7 +74,7 @@ html {
   min-height: 100%;
 }
 .container-full {
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
   font-family: 'Vollkorn', serif;
 }
 footer {
