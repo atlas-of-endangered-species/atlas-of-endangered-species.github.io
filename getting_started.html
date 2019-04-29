@@ -2,32 +2,34 @@
 layout: page
 ---
 
-## Introduction
+<h2 id="introduction">Introduction</h2>
 
-We are now living in the anthropocene.  The biodiversity of our planet faces unprecedented threats. Fortunately new developments in technology and data collection enable conservation scientists to attempt new approaches in addressing the situation. Historically there have been many attempts in creating atlases which contain information about the species locations. So far though those have been focused on mapping observation data only. The abundance of satellite data climate data can be combined with advances in machine learning to create “smarter” maps. Those maps take into account environmental data and create visualisations which are much more advanced and cover much larger areas even where observation data is missing. The current project aims to create such maps for endangered species.
+<p>We are now living in the anthropocene.  The biodiversity of our planet faces unprecedented threats. Fortunately new developments in technology and data collection enable conservation scientists to attempt new approaches in addressing the situation. Historically there have been many attempts in creating atlases which contain information about the species locations. So far though those have been focused on mapping observation data only. The abundance of satellite data climate data can be combined with advances in machine learning to create “smarter” maps. Those maps take into account environmental data and create visualisations which are much more advanced and cover much larger areas even where observation data is missing. The current project aims to create such maps for endangered species.</p>
 
-## What is Species Distribution Modelling (SDM)?
+<h2 id="whatisspeciesdistributionmodellingsdm">What is Species Distribution Modelling (SDM)?</h2>
 
-SDM or Ecological Niche Modelling (how it is sometimes named), is a relatively new filled in computational biology. It allowed to take into account environmental data and species occurrence data to create maps of the potential habitat. Those models and maps can be used not only to map the niches of the species in question, but also estimate the effects of changed environmental conditions and predict invasive species distributions.
+<p>SDM or Ecological Niche Modelling (how it is sometimes named), is a relatively new filled in computational biology. It allowed to take into account environmental data and species occurrence data to create maps of the potential habitat. Those models and maps can be used not only to map the niches of the species in question, but also estimate the effects of changed environmental conditions and predict invasive species distributions.</p>
 
-For almost all of the procedures the R package *sdmench* was used. For more information refer to the [Github repository](https://github.com/boyanangelov/sdmbench) or the [Journal of Open Source Software paper](https://joss.theoj.org/papers/b0166a4b4c9cfa39761ec2a2fa71ff1c).
+<p>For almost all of the procedures the R package <em>sdmench</em> was used. For more information refer to the <a href="https://github.com/boyanangelov/sdmbench">Github repository</a> or the <a href="https://joss.theoj.org/papers/b0166a4b4c9cfa39761ec2a2fa71ff1c">Journal of Open Source Software paper</a>.</p>
 
-![](https://github.com/boyanangelov/sdmbench/raw/master/logo.png)
+<p><img src="https://github.com/boyanangelov/sdmbench/raw/master/logo.png" alt="" /></p>
 
-## Species selection
+<h2 id="speciesselection">Species selection</h2>
 
-For this project the initial focus are European species. The species list is from the [IUCN European Red List of Threatened Species](https://www.iucn.org/regions/europe/our-work/european-red-list-threatened-species).
+<p>For this project the initial focus are European species. The species list is from the <a href="https://www.iucn.org/regions/europe/our-work/european-red-list-threatened-species">IUCN European Red List of Threatened Species</a>.</p>
 
-## Observation data
+<h2 id="observationdata">Observation data</h2>
 
-The observation data is obtained from the [Global Biodiversity Information Facility](https://www.gbif.org/) (GBIF).
+<p>The observation data is obtained from the <a href="https://www.gbif.org/">Global Biodiversity Information Facility</a> (GBIF).</p>
 
-![](https://pt-zapovednik.org/wp-content/uploads/2018/05/GBIF-2015-full-stacked-display.png)
+<p><img src="https://pt-zapovednik.org/wp-content/uploads/2018/05/GBIF-2015-full-stacked-display.png" alt="" /></p>
 
-## Environmental data
+<h2 id="environmentaldata">Environmental data</h2>
 
-The environmental data consists of the so called “bioclimatic” variables. Those are derived by experts from more general measurements. A detailed description is available on the [Worldclim website](https://www.worldclim.org/bioclim/).
+<p>The environmental data consists of the so called “bioclimatic” variables. Those are derived by experts from more general measurements. A detailed description is available on the <a href="https://www.worldclim.org/bioclim/">Worldclim website</a>.</p>
 
-## Machine learning
+<p>For the "future" climate selection the CMIP5 climate model (50 years) was used.</p>
 
-For the first version of the atlas the Random Forest algorithm was used. This selection is based on the well known out-of-the box good performance on a variety of regression and classification tasks.
+<h2 id="machinelearning">Machine learning</h2>
+
+<p>For the first version of the atlas the Random Forest algorithm was used. This selection is based on the well known out-of-the box good performance on a variety of regression and classification tasks.</p>
