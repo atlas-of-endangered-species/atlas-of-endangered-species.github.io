@@ -67,9 +67,18 @@
   }
 }
 
-.container-full {
+.container-full,
+.container {
   // margin-bottom: 60px;
   font-family: 'Vollkorn', serif;
+}
+
+.page {
+  margin-top: 3em;
+  margin-bottom: 8em;
+  img {
+    width: 25%;
+  }
 }
 
 // Hide scrollbar

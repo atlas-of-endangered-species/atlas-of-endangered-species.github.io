@@ -1,3 +1,5 @@
+![](logo.png)
+
 # Atlas of Endangered Species Distributions
 
 
